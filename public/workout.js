@@ -20,7 +20,7 @@ async function initWorkout() {
 }
 
 function tallyExercises(exercises) {
-  const tallied = exercises.reduce((acc, curr) => {
+  const tallied = exercises.reduce((acc, curr) => { 
     if (curr.type === "resistance") {
       acc.totalWeight = (acc.totalWeight || 0) + curr.weight;
       acc.totalSets = (acc.totalSets || 0) + curr.sets;
@@ -57,7 +57,7 @@ function renderWorkoutSummary(summary) {
     totalDistance: "Total Distance Covered"
   };
 
-  Object.keys(summary).forEach(key => {
+  Object.keys(summary).forEach(key => { 
     const p = document.createElement("p");
     const strong = document.createElement("strong");
 

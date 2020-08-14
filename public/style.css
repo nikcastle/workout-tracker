@@ -1,5 +1,6 @@
+/* what are the ::before and ::after tags? */
 *,
-*::before,
+*::before, 
 *::after {
   box-sizing: border-box;
   margin: 0;

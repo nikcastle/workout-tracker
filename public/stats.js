@@ -1,6 +1,6 @@
 // get all workout data from back-end
 
-fetch("/api/workouts/range")
+fetch("/api/workouts/range") 
   .then(response => {
     return response.json();
   })
@@ -136,7 +136,7 @@ function populateChart(data) {
       scales: {
         yAxes: [
           {
-            ticks: {
+            ticks: { //* ticks?
               beginAtZero: true
             }
           }

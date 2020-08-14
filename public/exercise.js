@@ -20,12 +20,12 @@ let shouldNavigateAway = false;
 async function initExercise() {
   let workout;
 
-  if (location.search.split("=")[1] === undefined) {
+  if (location.search.split("=")[1] === undefined) { //* what is happening here?
     workout = await API.createWorkout()
     console.log(workout)
   }
   if (workout) {
-    location.search = "?id=" + workout._id;
+    location.search = "?id=" + workout._id; //* why ?id
   }
 
 }
@@ -36,7 +36,7 @@ function handleWorkoutTypeChange(event) {
   workoutType = event.target.value;
 
   if (workoutType === "cardio") {
-    cardioForm.classList.remove("d-none");
+    cardioForm.classList.remove("d-none"); //* what are the d- 's for?
     resistanceForm.classList.add("d-none");
   } else if (workoutType === "resistance") {
     resistanceForm.classList.remove("d-none");
@@ -114,7 +114,7 @@ async function handleFormSubmit(event) {
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
 
-  await API.addExercise(workoutData);
+  await API.addExercise(workoutData); //* why is api capitalized?
   clearInputs();
   toast.classList.add("success");
 }
