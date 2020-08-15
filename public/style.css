@@ -10,6 +10,7 @@
 html,
 body,
 .wrapper {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 100%;
 }
 
@@ -18,8 +19,9 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #2874A6;
   color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 80px;
   padding: 10px;
   line-height: 3;
@@ -42,6 +44,8 @@ header {
 }
 
 header h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 55px;
   transform: skewX(-2deg);
 }
 
@@ -97,8 +101,18 @@ input {
 }
 
 .wrapper {
+  background-image: url("./images/suganth-xJC_N991Fao-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #f2f8ff;
   padding-bottom: 100px;
+}
+
+.dash{
+  background-color: #F7F9FA;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card.m-auto,
@@ -409,15 +423,13 @@ form > button {
 }
 
 .buttons .ui.button:first-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  background-color: #2874A6;
+  border-radius: 30px;
 }
 
 .buttons .ui.button:nth-child(2) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
+  background-color: #74A628;
+  border-radius: 30px;
 }
 
 .workout-type,
